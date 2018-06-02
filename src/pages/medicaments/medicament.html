@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+
+  <ion-card *ngFor="let data of medicaments.medicaments">
+
+    <ion-card-header>
+      {{data.MED_NOMCOMMERCIAL}}
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Code : {{data.FAM_CODE}} </p>
+      <p>Composition : {{data.COMPOSITION}} </p>
+      <p>Depot legal : {{data.MED_DEPOTLEGAL}} </p>
+      <p>Effet : {{data.MED_EFFETS}} </p>
+      <p>Contre indication : {{data.MED_CONTREINDIC}} </p>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+
+
+
+
+</ion-content>

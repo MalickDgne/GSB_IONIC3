@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+
+  <ion-card *ngFor="let praticien of news.praticiens">
+
+    <ion-card-header>
+      {{praticien.PRA_NUM}}
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Nom : {{praticien.PRA_NOM}} </p>
+      <p>Prénom: {{praticien.PRA_PRENOM}} </p>
+      <p>Code Postal : {{praticien.PRA_CP}} </p>
+      <p>Adresse : {{praticien.PRA_ADRESSE}} </p>
+      <p>Ville : {{praticien.PRA_VILLE}} </p>
+      <p>Notoriété : {{praticien.PRA_COEFNOTORIETE}} </p>
+      <p>Tpe de Lieu : {{praticien.TYP_LIEU}} </p>
+    </ion-card-content>
+
+  </ion-card>
+
+
+
+
+
+
+</ion-content>

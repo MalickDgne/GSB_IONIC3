@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-item>
+        <ion-label color="primary"> Nom du praticien</ion-label>
+        <ion-textarea [(ngModel)]="NomPRA" placeholder="Enter a description"></ion-textarea>
+      </ion-item>
+
+  <ion-item>
+        <ion-label color="primary">Date de visite</ion-label>
+        <ion-datetime [(ngModel)]="DateVisite" placeholder=" ex: 2018/04/07" displayFormat="DD/MM/YYYY" [(ngModel)]="date"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Montant repas midi</ion-label>
+    <ion-input [(ngModel)]="MontantMidi" type="number" placeholder="hey"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Montant repas soir</ion-label>
+  <ion-input [(ngModel)]="Montantsoir" type="number" placeholder="hey"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label color="primary">Prix nuit</ion-label>
+<ion-input [(ngModel)]="PrixNuit" type="number" placeholder="hey"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label color="primary">Montant total (HF)</ion-label>
+<ion-input [(ngModel)]="MontantHF" type="number" placeholder="hey"></ion-input>
+</ion-item>
+
+
+<ion-item>
+  <ion-label color="primary">Nb Justificatif</ion-label>
+<ion-input [(ngModel)]="NbJusti" type="number" placeholder="hey"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label color="primary">Montant total</ion-label>
+<ion-input [(ngModel)]="MontantTT" type="number" placeholder="hey"></ion-input>
+</ion-item>
+
+<button ion-button full (tap)="valider()">VALIDER</button>
+
+
+
+
+
+
+
+</ion-content>

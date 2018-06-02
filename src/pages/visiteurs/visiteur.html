@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-card *ngFor="let visiteur of news.collaborateurs">
+
+    <ion-card-header>
+      {{visiteur.COL_MATRICULE}}
+    </ion-card-header>
+
+     <ion-card-content>
+      <p>Nom : {{visiteur.COL_NOM}} </p>
+      <p>Prenom : {{visiteur.COL_PRENOM}} </p>
+      <p>Date d'embauche: {{visiteur.COL_DATEEMBAUCHE}} </p>
+      <p>Code Postal : {{visiteur.COL_CP}} </p>
+      <p>Ville : {{visiteur.COL_VILLE}} </p>
+      <p>Chef Vente : {{visiteur.LAB_CHEFVENTE}} </p>
+      <p>Secteur libelle : {{visiteur.SEC_LIBELLE}} </p>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="matricule"  id="panel-connnexion">
+    <p> Bonjour {{ nom }} !</p>
+    <p> {{ (nom == "Malick") ? 'Bienvenu administrateur !'  : 'Bienvenu Utilisateur ! '}}</p>
+
+    <button id="Medicament" ion-button full (tap)="ShowMedicament()">Medicament</button>
+    <button id="Praticien" ion-button full (tap)="ShowPraticien()">Praticien</button>
+    <button id="consulterRapportVisite" ion-button full (tap)="ShowRapport()">Consulter un rapport de visite</button>
+    <button id="Visiteur" ion-button full (tap)="ShowVisiteur()">Visiteurs</button>
+    <button id="ConsulteruneNote" ion-button full (tap)="ShowNoteFrais()">Consulter une note de frais</button>
+    <button id="AjouterNoteFrais" ion-button full (tap)="SetNoteFrais()">Ajouter une note de frais</button>
+
+  </div>
+
+
+
+
+
+<div *ngIf="!matricule " id="panel-error">
+<h4>Vos information de connexion sont erroné</h4>
+
+</div>
+
+</ion-content>

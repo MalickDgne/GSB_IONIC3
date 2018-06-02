@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+ <ion-card *ngFor="let note of news.notedefrais">
+
+    <ion-card-header>
+      {{note.PRA_NOM}}
+    </ion-card-header>
+
+  <ion-card-content>
+      <p>Date visite :   {{note.dateVisite}} </p>
+      <p>Montant repas midi : {{note.MontantRepasMidi}} </p>
+      <p>Montant repas soir : {{note.MontantRepasSoir}} </p>
+      <p>Prix Nuit : {{note.PrixNuit}} </p>
+      <p>Montant total (HF) : {{note.MontantTotalHF}} </p>
+      <p>Nombre justificatif : {{note.NbJustificatif}} </p>
+      <p>Montant total : {{note.MontantTotal}} </p>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+
+
+
+
+</ion-content>

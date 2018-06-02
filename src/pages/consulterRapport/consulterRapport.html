@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+ <ion-card *ngFor="let rapport of news.Rapport_visite">
+
+    <ion-card-header>
+      {{rapport.RAP_NUM}}
+    </ion-card-header>
+
+  <ion-card-content>
+      <p>Matricule du Collaborateur :   {{rapport.COL_MATRICULE}} </p>
+      <p>Numéro du Praticien: {{rapport.PRA_NUM}} </p>
+      <p>Date : {{rapport.RAP_DATE}} </p>
+      <p>Motif : {{rapport.MOTIF_LIBELLE}} </p>
+      <p>Bilan : {{rapport.RAP_BILAN}} </p>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+
+
+
+
+</ion-content>

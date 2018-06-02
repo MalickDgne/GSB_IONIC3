@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      GSB
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label color="primary" floating>Nom</ion-label>
+    <ion-input placeholder="ex: a131" [(ngModel)]="matricule"></ion-input>
+  </ion-item>
+
+
+
+  <ion-item>
+      <ion-label color="primary" stacked>Date Embauche</ion-label>
+      <ion-datetime placeholder=" ex: 11/12/1992" displayFormat="DD/MM/YYYY" [(ngModel)]="mdp"></ion-datetime>
+    </ion-item>
+
+
+
+
+<button id="Connexion" ion-button full (tap)="ConnexionGSB()">Connexion</button>
+</ion-content>
